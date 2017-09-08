@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".GameActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score:"
+            android:id="@+id/score"
+            android:textColor="#0f0e0e"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life:"
+            android:id="@+id/life"
+            android:textColor="#0c0c0c"
+            android:textSize="35sp"
+            android:layout_marginLeft="150dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/arrows"
+            android:background="@drawable/arrow"
+            android:layout_marginBottom="350dp"
+            android:contentDescription="arrow" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/left_button"
+            android:background="@drawable/left_button"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="left_button" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/right_button"
+            android:background="@drawable/right_button"
+            android:layout_marginLeft="200dp"
+            android:contentDescription="right button" />
+    </TableRow>
+
+</LinearLayout>
